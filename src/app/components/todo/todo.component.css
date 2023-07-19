@@ -1,0 +1,88 @@
+.block-todo {
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.title-todo {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: gray;
+  font-style: italic;
+}
+
+form {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form input {
+  width: 85%;
+  padding: 8px;
+  border: none;
+}
+
+.btn-todo {
+  padding: 0 20px;
+  border: none;
+  background: #6db5f1;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-todo:hover {
+  background: #4d9fe2;
+}
+
+.todo-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, .5);
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.todo-btn {
+  display: flex;
+  gap: 2px;
+}
+
+.btn-task {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: aliceblue;
+}
+
+.btn-done {
+  background: #46a526;
+  transition: 0.5s;
+}
+
+.btn-done:hover {
+  background: #409723;
+  transform: scale(1.1);
+} 
+
+.btn-delete {
+  background: #f37c7c;
+  transition: 0.5s;
+}
+
+.btn-delete:hover {
+  background: #e66969;
+  transform: scale(1.1);
+}
+
+.done-task {
+  background-color: rgba(104, 202, 104, .5);
+}

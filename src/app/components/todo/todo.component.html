@@ -1,0 +1,16 @@
+<div class="block-todo">
+  <div class="title-todo">Todo</div>
+  <form (submit)= "add(addTask.value); addTask.value=''; $event.preventDefault()">
+    <input type="text" placeholder="add task" id="addTask" #addTask>
+    <button type="submit" class="btn-todo">Додати</button>
+  </form>
+  <div class="todo-list">
+    <div *ngFor="let item of task;  let i = index" class="todo-task" [ngClass]="{'done-task': doneTasks.includes(i)}">
+      {{item}}
+      <div class="todo-btn">
+        <button class="btn-task btn-done" (click)="done(i)">&#10003;</button>
+        <button class="btn-task btn-delete" (click)="delete(i)">&#10006;</button>
+      </div>
+    </div>
+  </div>
+</div>
